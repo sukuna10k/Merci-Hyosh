@@ -705,20 +705,20 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
-                                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                                InlineKeyboardButton('Groupe Support', url=GRP_LNK),
+                                InlineKeyboardButton('Mis à jour', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/hyoshcoder")
+                                InlineKeyboardButton("Propriétaire", url="t.me/Kingcey")
                                 ]
                             ]
                         )
                     )
     except UserIsBlocked:
-        await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
+        await query.answer('Débloquer le bot Mahhn !', show_alert=True)
     except PeerIdInvalid:
-        await query.answer('Hᴇʏ, Sᴛᴀʀᴛ Bᴏᴛ Fɪʀsᴛ Aɴᴅ Cʟɪᴄᴋ Sᴇɴᴅ Aʟʟ', show_alert=True)
+        await query.answer('Hᴇʏ, Démarre le bot puis clique sur Envoyer tput', show_alert=True)
     except Exception as e:
-        await query.answer('Hᴇʏ, Sᴛᴀʀᴛ Bᴏᴛ Fɪʀsᴛ Aɴᴅ Cʟɪᴄᴋ Sᴇɴᴅ Aʟʟ', show_alert=True)
+        await query.answer('Hᴇʏ, Démarre Le bot puis clique sur Envoyer tout', show_alert=True)
         
 async def get_cap(settings, remaining_seconds, files, query, total_results, search):
     # Aᴅᴅᴇᴅ Bʏ @creatorrio
@@ -726,7 +726,7 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
         IMDB_CAP = temp.IMDB_CAP.get(query.from_user.id)
         if IMDB_CAP:
             cap = IMDB_CAP
-            cap+="\n\n<b>📚 <u>Your Requested Files</u> 👇\n</b>"
+            cap+="\n\n<b>📚 <u>Vos fichiers demandés</u> 👇\n</b>"
             for file in files:
                 cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
         else:
@@ -768,13 +768,13 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                 for file in files:
                     cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
             else:
-                cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {query.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 👇\n⚡ {query.message.chat.title}\n</b>"
-                cap+="\n\n<b>📚 <u>Your Requested Files</u> 👇\n\n</b>"
+                cap = f"<b>🧿 Titre : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ Trouvé : <code>{total_results}</code>\n📝 Demander Par : {query.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n⚜️ Propulser Par : 👇\n⚡ {query.message.chat.title}\n</b>"
+                cap+="\n\n<b>📚 <u>Vos fichiers Demandés</u> 👇\n\n</b>"
                 for file in files:
                     cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
     else:
         cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {query.from_user.mention}\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 👇\n⚡ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™\n</b>"
-        cap+="\n\n<b>📚 <u>Your Requested Files</u> 👇\n\n</b>"
+        cap+="\n\n<b>📚 <u>Vos Fichiers demandés</u> 👇\n\n</b>"
         for file in files:
             cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
     return cap
