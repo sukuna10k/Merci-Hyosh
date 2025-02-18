@@ -5,9 +5,7 @@ import asyncio
 from logging import WARNING, getLogger
 from pyrogram import Client
 from time import time
-import logging 
-from dotenv import load_dotenv
-load_dotenv()
+import logging
 
 LOGGER = logging.getLogger(__name__)
 
