@@ -1,22 +1,22 @@
 class script(object):
     
-    START_TXT = """<b>Salut <spoiler>{}</spoiler>,
+    START_TXT = """<b>Salut {},
 
-Je suis le bot de filtrage automatique le plus puissant avec des fonctionnalités premium. Ajoutez-moi simplement à votre groupe et profitez-en !
+Je suis Marsh ƈɾσɯ je suis un puissant bot qui peut te fournir des Films, Séries, Animes, cartoon et plein d'autres encore. Il suffit de rejoindre mon canal et de profitez !
 
-‣ Maintenu par : <a href='https://telegram.me/hyoshassistantbot'>Hyosh Coder</a></b>
+<blockquote> ‣ Maintenu par : [BotZFlix](https://t.me/BotZFlix)</blockquote></b>
 """
-    GSTART_TXT = """<b>Salut {},\n\nJe suis le bot de filtrage automatique le plus puissant avec des fonctionnalités premium.\n\nMaintenu par : <a href="https://t.me/hyoshassistantbot">HYOSHCODER</a></b>"""
+    GSTART_TXT = """<b>Salut {},\n\nJe suis le bot de filtrage automatique le plus puissant avec des fonctionnalités premium.\n\nMaintenu par : <a href="https://t.me/BotZFlix">BotZFlix</a></b>"""
 
     HELP_TXT = """<b>Cliquez sur le bouton ci-dessous pour obtenir une description des commandes spécifiques !</b>"""
 
     ABOUT_TXT = """
 <b>❍ Nom : {}</b>
-<b>❍ Créateur : <a href="https://t.me/hyoshassistantbot">HYOSHCODER</a></b>
+<b>❍ Créateur : [Hyosh](https://t.me/hyoshassistantbot) et [🇰ιηg¢єу](https://t.me/kingcey)</b>
 <b>❍ Bibliothèque : <a href="https://pyrogram.org/">Pyrogram</a></b>
 <b>❍ Langage : <a href="https://www.python.org/">Python</a></b>
 <b>❍ Base de données : <a href="https://www.mongodb.com/">MongoDB</a></b>
-<b>❍ Hébergé sur : <a href="https://t.me/hyoshassistantbot">VPS</a></b>
+<b>❍ Hébergé sur : <a href="https://t.me/botZFlix">VPS</a></b>
 <b>❍ Version : v4.4.1</b>
 
 ➲ Je restreins les utilisateurs, filtre automatiquement, et offre une gestion complète des utilisateurs.<br>
@@ -28,7 +28,7 @@ Je suis le bot de filtrage automatique le plus puissant avec des fonctionnalité
     SUBSCRIPTION_TXT = """
 <b>Partagez votre lien avec vos amis, votre famille, vos chaînes et vos groupes pour obtenir gratuitement un abonnement premium pour {}
 
-Lien de parrainage - https://telegram.me/{}?start=Hokage-{}
+Lien de parrainage - https://telegram.me/{}?start=AntiFlix-{}
 
 Si {} utilisateur unique démarre le bot avec votre lien de parrainage, vous serez automatiquement ajouté à la liste premium.
 
@@ -36,16 +36,16 @@ Achetez un plan payant avec - /plan</b>"""
 
     SOURCE_TXT = """
 Hey,  
-C'est Hokage,  
+C'est BotZFlix,  
 un bot Telegram open source d'auto-filtrage avec des modules d'intelligence artificielle et de gestion de groupes.  
 
 Écrit en Python avec l'aide de <a href='https://github.com/pyrogram/pyrogram'>Pyrogram</a> et <a href='https://github.com/python-telegram-bot/python-telegram-bot'>Python-Telegram-Bot</a>,  
 et utilisant <a href='https://cloud.mongodb.com'>Mongo</a> comme base de données.  
 
-» Voici mon code source : <a href='https://github.com/kalebavincent/hokage_autofilter-bot.git'>GitHub</a>  
+» Voici mon code source : <a href='https://botZFlix'>Click ici</a>  
 
-Hokage est sous licence <a href='https://github.com/kalebavincent/hokage_autofilter-bot.git/blob/Hokage-main/LICENSE'>MIT</a>.  
-© 2023 - 2024 | <a href='https://t.me/promo_prenium_groupe'>Support Chat</a>, tous droits réservés.
+Hokage est sous licence <a href='https://LICENSE'>MIT</a>.  
+© 2023 - 2024 | <a href='https://t.me/Kingcey1'>Support Chat</a>, tous droits réservés.
 """
 
     MAIN_TXT = """
@@ -60,7 +60,7 @@ Consultez votre module favori
 <b>Cliquez sur les boutons ci-dessous pour rejoindre les chaînes et obtenir plus d'informations sur nous.</b>  
 
 Si vous trouvez un bug dans « Hokage » ou si vous souhaitez donner un retour sur le bot,  
-veuillez le signaler ici : <a href='https://t.me/promo_prenium_groupe'>Support Chat</a>.
+veuillez le signaler ici : <a href='https://t.me/kingcey1'>Support Chat</a>.
 """
 
     DONATE = """
@@ -77,7 +77,7 @@ Si vous avez des moyens de nous aider, faites-le généreusement. Vos contributi
 Vous pouvez soutenir le développement en faisant un don :  
 UPI : Gautam8292@fam  
 
-Envoyez une capture d'écran ici : @hyoshdesign</b>
+Envoyez une capture d'écran ici : @Kingcey</b>
 """
 
     SETTINGS_TXT = """
@@ -161,14 +161,14 @@ Boutons d'alerte :
 
 ◈ <b>Recherchez un film avec une orthographe correcte :</b>
 • avatar 2009 ✅
-• avatar hindi ✅
-• avatar movie ❌
-• avatar hindi dubbed..❌
+• avatar VF ✅
+• avatar series ❌
+• avatar Film en français..❌
 
-◈ <b>Recherchez une série web dans ce format :</b>
+◈ <b>Recherchez une série Web, Animé, cartoon dans ce format :</b>
 • vikings S01 ✅
 • vikings S01E01 ✅
-• vikings S01 hindi ✅
+• vikings ✅
 • vikings S01 hindi dubbed... ❌
 • vikings saison 1 ❌
 • vikings série web ❌
@@ -209,7 +209,7 @@ Ces fonctionnalités sont des options supplémentaires offertes par ce bot.
 • Utilisation : Obtenez l'ID d'un sticker.
 
 <b>Comment l'utiliser :</b>
-◉ Répondez à n'importe quel sticker avec la commande [/stickerid].
+◉ Répondez à n'importe quel sticker avec la commande [`/stickerid`].
 
 /stickerid - Obtenez l'ID d'un sticker.
 </b>
@@ -287,7 +287,7 @@ Cette commande vous aide à signaler un message ou un utilisateur aux admins du 
 /report @admin - Pour signaler un utilisateur aux admins (répondre à un message).</b>"""
 
     HYOSHCODER = """
-<b>C'est le bot Hokage 🦚,
+<b>C'est le bot Marsh ƈɾσɯ 🦚,
 Un puissant bot stable et mignon pour filtrer et gérer Telegram.</b>"""
 
     GEN_PASS = """<b>Générateur de mot de passe</b>
@@ -753,7 +753,7 @@ Alimenté par - @hyoshassistantbot"""
 ◉ Nom d'utilisateur: {}"""
 
     ALRT_TXT = """{},
-Vérifiez votre propre demande 😤
+Faite votre propre demande 😤
 """
 
     OLD_ALRT_TXT = """Hé {},
@@ -969,7 +969,7 @@ Message : <b>{}</b>"""
     CAPTION = """
 <b>• {file_name}
 
-• Alimenté par : <a href="https://t.me/hyoshassistantbot/161">Hyosh Coder Bots</a></b>"""
+• Alimenté par : <a href="https://t.me/botZflix">BotZFlix</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Requête : {query}
@@ -1005,13 +1005,13 @@ hyosh coder
     
 🎖️ <u>plans disponibles</u>
 
-● <code>10$</code> ➛ <u>plan bronze</u> » <code>7 jours</code>
-● <code>60$</code> ➛ <u>plan argent</u> » <code>30 jours</code>
-● <code>180$</code> ➛ <u>plan or</u> » <code>90 jours</code>
-● <code>250$</code> ➛ <u>plan platine</u> » <code>180 jours</code>
-● <code>400$</code> ➛ <u>plan diamant</u> » <code>365 jours</code>
+● <code>05$</code> ➛ <u>plan bronze</u> » <code>7 jours</code>
+● <code>20$</code> ➛ <u>plan argent</u> » <code>30 jours</code>
+● <code>30$</code> ➛ <u>plan or</u> » <code>90 jours</code>
+● <code>50$</code> ➛ <u>plan platine</u> » <code>180 jours</code>
+● <code>100$</code> ➛ <u>plan diamant</u> » <code>365 jours</code>
 
-💵 identifiant UPI - <code>dm - @hyoshassistantbot</code>
+💵 identifiant UPI - <code>dm - @kingcey</code>
 📸 code QR - <a href='https://graph.org/file/02e7ecc3e2693b481b914.jpg'>cliquez ici pour scanner</a>
 
 ⚜️ vérifiez votre plan actif en utilisant : /myplan
@@ -1022,13 +1022,13 @@ hyosh coder
     
 🎖️ <u>plans disponibles</u> :
 
-● <code>10$</code> ➛ <u>plan bronze</u> » <code>7 jours</code>
-● <code>60$</code> ➛ <u>plan argent</u> » <code>30 jours</code>
-● <code>180$</code> ➛ <u>plan or</u> » <code>90 jours</code>
-● <code>250$</code> ➛ <u>plan platine</u> » <code>180 jours</code>
-● <code>400$</code> ➛ <u>plan diamant</u> » <code>365 jours</code>
+● <code>05$</code> ➛ <u>plan bronze</u> » <code>7 jours</code>
+● <code>20$</code> ➛ <u>plan argent</u> » <code>30 jours</code>
+● <code>30$</code> ➛ <u>plan or</u> » <code>90 jours</code>
+● <code>50$</code> ➛ <u>plan platine</u> » <code>180 jours</code>
+● <code>100$</code> ➛ <u>plan diamant</u> » <code>365 jours</code>
 
-💵 identifiant UPI - <code>dm - @hyoshassistantbot</code>
+💵 identifiant UPI - <code>dm - @kingcey</code>
 📸 code QR - <a href='https://graph.org/file/02e7ecc3e2693b481b914.jpg'>cliquez ici pour scanner</a>
 
 ⚜️ vérifiez votre plan actif en utilisant : /myplan
@@ -1071,7 +1071,7 @@ hyosh coder
     
 🥉 <u>PLAN BRONZE</u>
 ⏰ 7 jours
-💸 Prix du plan ➛ 10$
+💸 Prix du plan ➛ 05$
 
 ➛ Utilisez /plan pour voir tous nos plans immédiatement.
 ➛ Vérifiez votre plan actif en utilisant : /myplan</b>"""
@@ -1080,7 +1080,7 @@ hyosh coder
     
 🥈 <u>PLAN ARGENT</u>
 ⏰ 30 jours
-💸 Prix du plan ➛ 60$
+💸 Prix du plan ➛ 20$
 
 ➛ Utilisez /plan pour voir tous nos plans immédiatement.
 ➛ Vérifiez votre plan actif en utilisant : /myplan</b>"""
@@ -1089,7 +1089,7 @@ hyosh coder
     
 🥇 <u>PLAN OR</u>
 ⏰ 90 jours
-💸 Prix du plan ➛ 180$
+💸 Prix du plan ➛ 30$
 
 ➛ Utilisez /plan pour voir tous nos plans immédiatement.
 ➛ Vérifiez votre plan actif en utilisant : /myplan</b>"""
@@ -1098,7 +1098,7 @@ hyosh coder
 
 🏅 <u>PLAN PLATINUM</u>
 ⏰ 180 JOURS
-💸 Prix du plan ➛ 250$
+💸 Prix du plan ➛ 50$
 
 ➛ Utilisez /plan pour voir tous nos plans en une seule fois.
 ➛ Vérifiez votre plan actif en utilisant : /myplan</b>"""
@@ -1107,7 +1107,7 @@ hyosh coder
 
 💎 <u>PLAN DIAMANT</u>
 ⏰ 365 JOURS
-💸 Prix du plan ➛ 400$
+💸 Prix du plan ➛ 100$
 
 ➛ Utilisez /plan pour voir tous nos plans en une seule fois.
 ➛ Vérifiez votre plan actif en utilisant : /myplan</b>"""
@@ -1129,7 +1129,7 @@ hyosh coder
 
 ⚜️ Payez le montant correspondant à votre plan et profitez d'un abonnement PREMIUM !
 
-💵 ID UPI - <code>dm - @hyoshassistantbot</code>
+💵 ID UPI - <code>dm - @kingcey</code>
 
 ‼️ Vous devez envoyer une capture d'écran après le paiement.</b>"""
 
@@ -1161,7 +1161,7 @@ hyosh coder
     DEVELOPER_TXT = """
 Merci spécial ❤️ Développeur -
 
--Dev [Propriétaire de ce bot ]<a href='https://t.me/hyoshassistantbot'>HYOSHCODER</a>
+-Dev [Propriétaire de ce bot ]<a href='https://t.me/kingcey'>🇰ιηg¢єу</a>
 """
 
 Script = script()
